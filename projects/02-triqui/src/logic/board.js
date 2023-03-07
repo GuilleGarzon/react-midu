@@ -1,13 +1,13 @@
-import { WINNER_COMBOS } from "../constants";
+import { WINNER_COMBOS } from '../constants'
 
-export const checkWinnerFrom = ( boardToCheck ) => {
+export const checkWinnerFrom = (boardToCheck) => {
   // revisamos todas las operaciones ganadoras para ver si X u O ganó
-  for ( const combo of WINNER_COMBOS ) {
+  for (const combo of WINNER_COMBOS) {
     const [a, b, c] = combo
     if (
       boardToCheck[a] &&
-      boardToCheck[a] === boardToCheck[b] && 
-      boardToCheck[a] === boardToCheck[c] 
+      boardToCheck[a] === boardToCheck[b] &&
+      boardToCheck[a] === boardToCheck[c]
     ) {
       return boardToCheck[a]
     }

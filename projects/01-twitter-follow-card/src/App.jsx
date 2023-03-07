@@ -1,32 +1,32 @@
-import './App.css';
-import { TwitterFollowCard } from './TwitterFollowCard.jsx';
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 
 const users = [
   {
     userName: 'midudev',
     name: 'Miguel Ángel Durán',
-    isFollowing: true,
+    isFollowing: true
   },
   {
     userName: 'pheralb',
     name: 'Pablo H.',
-    isFollowing: false,
+    isFollowing: false
   },
   {
     userName: 'PacoHdezs',
     name: 'Paco Hdez',
-    isFollowing: true,
+    isFollowing: true
   },
   {
     userName: 'TMChein',
     name: 'Tomas',
-    isFollowing: false,
-  },
-];
+    isFollowing: false
+  }
+]
 
-export function App() {
+export function App () {
   return (
-    <section className="App">
+    <section className='App'>
       {users.map(({ userName, name, isFollowing }) => (
         <TwitterFollowCard
           key={userName}
@@ -37,5 +37,5 @@ export function App() {
         </TwitterFollowCard>
       ))}
     </section>
-  );
+  )
 }
