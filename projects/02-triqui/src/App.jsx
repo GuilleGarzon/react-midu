@@ -53,7 +53,7 @@ function App() {
       setWinner(false); // empate
     }
   }
-
+  
   return (
     <main className="board">
       <h1>Juego de Triqui</h1>
